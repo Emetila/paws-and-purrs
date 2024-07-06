@@ -4,6 +4,7 @@ import { HeroSection } from "../../components/Hero";
 import { FeaturedProduct } from "../../components/Featured";
 import { BrowseSection } from "../../components/Browse";
 import { Categories } from "../../components/categories";
+import { StorySection } from "../../components/Story";
 
 export const HomePage = () => {
     return (
@@ -13,6 +14,7 @@ export const HomePage = () => {
             <FeaturedProduct />
             <BrowseSection />
             <Categories />
+            <StorySection />
         </div>
     )
 }
