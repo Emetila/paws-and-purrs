@@ -1,0 +1,32 @@
+.container {
+    display: flex;
+    padding: 40px;
+    padding-right: 0;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 100px;
+    overflow: hidden;
+}
+
+.dogbox, .catbox {
+    display: flex;
+}
+
+.image {
+    width: 400px;
+    height: 220px;
+}
+
+.image2 {
+    width: 264px;
+    height: 200px;
+}
+
+.title {
+    width: 300px;
+}
+
+.cat h1 {
+    width: 200px;
+    font-family: "Roboto", sans-serif;
+}

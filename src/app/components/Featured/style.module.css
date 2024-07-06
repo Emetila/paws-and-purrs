@@ -1,6 +1,7 @@
 .container {
     display: flex;
     padding: 0 100px;
+    padding-bottom: 40px;
     flex-direction: column;
     align-items: center;
     gap: 60px;
@@ -60,6 +61,10 @@
     padding-top: 12px;
 }
 
+.wrap {
+    padding: 0 15px;
+}
+
 .amount {
     color: #000;
     font-family: "Roboto", sans-serif;
@@ -70,7 +75,7 @@
 }
 
 .button {
-    width: 220px;
+    margin-bottom: 20px;
 }
 
 .productbox {
