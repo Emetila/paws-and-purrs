@@ -82,3 +82,16 @@
     border-radius: 8px;
     box-shadow: 1px 1px 2.1px 0px rgba(121, 116, 126, 0.25), 0px 1px 3px 1px rgba(217, 229, 228, 0.15);
 }
+
+@media (max-width:500px) {
+    .container {
+        padding: 170px 20px;
+        padding-bottom: 40px;
+        gap: 60px;
+        overflow: hidden;
+    }
+
+    .products {
+        flex-direction: column;
+    }
+}
