@@ -5,6 +5,7 @@
     align-items: center;
     gap: 60px;
     align-self: stretch;
+    background-color: #F6FAF9;
 }
 
 .textbox {

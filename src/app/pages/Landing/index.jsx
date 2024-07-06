@@ -6,6 +6,7 @@ import { BrowseSection } from "../../components/Browse";
 import { Categories } from "../../components/categories";
 import { StorySection } from "../../components/Story";
 import { Newsletter } from "../../components/Newsletter";
+import { Footer } from "../../components/Footer";
 
 export const HomePage = () => {
     return (
@@ -17,6 +18,7 @@ export const HomePage = () => {
             <Categories />
             <StorySection />
             <Newsletter />
+            <Footer />
         </div>
     )
 }
