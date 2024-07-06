@@ -1,9 +1,19 @@
-import React from "react";
+import React, {useState} from "react";
 import './LandingPageNavigation.css';
 import {ReactComponent as LogoImage} from '../../assets/logo.svg';
 import { HeaderNavigation } from "./HeaderNavigation";
+import {ReactComponent as SearchIcon} from '../../assets/icon/search.svg';
 
 export const LandingPageNavigation = () => {
+        // const [query, setQuery] = useState('');
+      
+        // const handleInputChange = (event) => {
+        //   setQuery(event.target.value);
+        // };
+      
+        // const handleSearch = () => {
+        //   onSearch(query);
+        // };
     return (<>
         <header className='header'>
             <div>
@@ -32,7 +42,10 @@ export const LandingPageNavigation = () => {
         </header>
         <div className='search'>
             <input type="text" 
+            // value={query}
+            // onChange={handleInputChange}
             placeholder="Find the best for your pet"/>
+            <SearchIcon />
         </div>
         </>
     )
