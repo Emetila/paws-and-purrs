@@ -3,6 +3,7 @@ import { LandingPageNavigation } from "../../components/Header/LandingPageNaviga
 import { HeroSection } from "../../components/Hero";
 import { FeaturedProduct } from "../../components/Featured";
 import { BrowseSection } from "../../components/Browse";
+import { Categories } from "../../components/categories";
 
 export const HomePage = () => {
     return (
@@ -11,6 +12,7 @@ export const HomePage = () => {
             <HeroSection />
             <FeaturedProduct />
             <BrowseSection />
+            <Categories />
         </div>
     )
 }
