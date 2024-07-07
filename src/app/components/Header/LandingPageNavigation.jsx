@@ -1,23 +1,33 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import './LandingPageNavigation.css';
-import {ReactComponent as LogoImage} from '../../assets/logo.svg';
 import { HeaderNavigation } from "./HeaderNavigation";
-import {ReactComponent as SearchIcon} from '../../assets/icon/search.svg';
+import { IoSearch } from "react-icons/io5";
+import { Logo } from "./Logo";
+import { FaRegUser } from "react-icons/fa6";
+import { Outlet, Link } from "react-router-dom";
+import { IoMdArrowDropdown } from "react-icons/io";
+import { IoIosHelpCircleOutline } from "react-icons/io";
+import { MdOutlineShoppingCart } from "react-icons/md";
 
 export const LandingPageNavigation = () => {
-        // const [query, setQuery] = useState('');
-      
-        // const handleInputChange = (event) => {
-        //   setQuery(event.target.value);
-        // };
-      
-        // const handleSearch = () => {
-        //   onSearch(query);
-        // };
+    const [isOpen, setIsOpen] = useState(false);
+
+    const toggleDropdown = () => {
+        setIsOpen(!isOpen);
+    }
+    // const [query, setQuery] = useState('');
+
+    // const handleInputChange = (event) => {
+    //   setQuery(event.target.value);
+    // };
+
+    // const handleSearch = () => {
+    //   onSearch(query);
+    // };
     return (<>
         <header className='header'>
             <div>
-            <LogoImage className='logo' />
+                <Logo />
             </div>
 
             <div className='menu'>
@@ -28,25 +38,44 @@ export const LandingPageNavigation = () => {
                 <nav>
                     <ul>
                         <li>
-                            <a href="/accont">Accounts</a>
+                            <FaRegUser className="icon" />
+                            <Link to="/accont">Accounts</Link>
+                            <IoMdArrowDropdown onClick={toggleDropdown} className="dropdown-toggle" />
+                            {isOpen && (
+                                <ul className="dropdown-menu">
+                                    <li className="dropdown-item">Item 1</li>
+                                    <li className="dropdown-item">Item 2</li>
+                                    <li className="dropdown-item">Item 3</li>
+                                </ul>
+                            )}
                         </li>
                         <li>
-                            <a href="/help">Help</a>
+                            <IoIosHelpCircleOutline className="icon" />
+                            <Link to="/help">Help</Link>
+                            <IoMdArrowDropdown onClick={toggleDropdown} className="dropdown-toggle" />
+                            {isOpen && (
+                                <ul className="dropdown-menu">
+                                    <li className="dropdown-item">Item 1</li>
+                                    <li className="dropdown-item">Item 2</li>
+                                    <li className="dropdown-item">Item 3</li>
+                                </ul>
+                            )}
                         </li>
                         <li>
-                            <a href="/cart">Cart</a>
+                            <MdOutlineShoppingCart className="icon" />
+                            <Link to="/cart">Cart</Link>
                         </li>
                     </ul>
                 </nav>
             </div>
         </header>
         <div className='search'>
-            <input type="text" 
-            // value={query}
-            // onChange={handleInputChange}
-            placeholder="Find the best for your pet"/>
-            <SearchIcon />
+            <input type="text"
+                // value={query}
+                // onChange={handleInputChange}
+                placeholder="Find the best for your pet" />
+            <IoSearch className="searchicon" />
         </div>
-        </>
+    </>
     )
 }

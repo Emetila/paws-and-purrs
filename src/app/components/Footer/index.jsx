@@ -25,14 +25,17 @@ export const Footer = () => {
                     <Menu title="Pet" options={petMenu} />
                     <Menu title="Shop" options={shopMenu} />
                     <Menu title="Info" options={infoMenu} />
-                    <Menu title="Legal" options={legalUrls} />
+                    {/* <Menu title="Legal" options={legalUrls} /> */}
                 </div>
 
-                {/* <div className={style['legal-urls']}>
+                <div className={style['legal-urls']}>
+                    <h5>Legal</h5>
+                    <ul>
                     {
                         legalUrls.map(({ url, name }) => <a href={url}>{name}</a>)
                     }
-                </div> */}
+                    </ul>
+                </div>
             </div>
 
             <div className={style.copyright}>

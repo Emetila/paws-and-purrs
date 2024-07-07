@@ -56,7 +56,7 @@
     font-size: 16px;
 }
 
-.nav ul {
+.nav ul, .legal-urls {
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
@@ -65,7 +65,7 @@
     margin-top: -90px;
 }
 
-.nav h5 {
+.nav h5, .legal-urls h5 {
     color: white;
     font-family: "Roboto", sans-serif;
     font-size: 20px;
@@ -76,6 +76,26 @@
 .logo {
     width: 100px;
     height: 100px;
+}
+
+.legal-urls h5 {
+    margin-top: -60px;
+    margin-left: 1px;
+}
+
+.legal-urls {
+    margin-left: -80px;
+}
+
+.dropdown {
+    position: relative;
+  display: inline-block;
+}
+
+.legal-urls a{
+    text-decoration: none;
+    color: white;
+    font-family: "Roboto", sans-serif;
 }
 
 @media (max-width:500px) {

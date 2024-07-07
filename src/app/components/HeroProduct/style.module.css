@@ -1,0 +1,33 @@
+.container {
+    padding: 80px 100px;
+}
+
+.products {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+}
+
+.productbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.images {
+    width: 274.875px;
+    height: 200px;
+}
+
+.heading{
+font-family: "Roboto", sans-serif;
+font-size: 28px;
+font-weight: 600;
+line-height: 40px;
+}
+
+.heading a {
+    color: #005858;
+    text-decoration: none;
+}
