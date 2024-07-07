@@ -1,0 +1,96 @@
+.container {
+    display: flex;
+    width: 300px;
+    padding: 0px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.type,
+.age,
+.rating, .pricebox {
+    display: flex;
+    padding-bottom: 40px;
+    flex-direction: column;
+    align-items: flex-start;
+    /* justify-content: left; */
+    border-bottom: 1px solid #BDC9C8;
+}
+
+.age,
+.rating {
+    width: 300px;
+}
+
+.textbox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 250px;
+}
+
+.textbox div,
+.age div,
+.box,
+.rating div {
+    display: flex;
+    align-items: center;
+}
+
+.age div {
+    width: 100px;
+}
+
+p {
+    color: var(--material-theme-black, #000);
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+}
+
+h1 {
+    color: #000;
+    font-family: "Roboto", sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 36px;
+}
+
+.type input, .age input, .rating input {
+    width: 24px;
+    height: 18px;
+    accent-color: #005858;
+}
+
+.star {
+    color: #FF8376;
+}
+
+.numberbutton {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.button {
+    width: 100px;
+    height: 32px;
+    border-radius: 8px;
+}
+
+.pricebox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.stroke {
+    display: flex;
+    padding-left: 4px;
+    align-items: center;
+    gap: 6px;
+    align-self: stretch;
+}
