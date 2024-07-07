@@ -1,9 +1,9 @@
 .container {
     display: flex;
     width: 300px;
-    padding: 0px 20px;
     flex-direction: column;
     align-items: flex-start;
+    position: sticky;
 }
 
 .type,
@@ -19,7 +19,7 @@
 
 .age,
 .rating {
-    width: 300px;
+    width: 250px;
 }
 
 .textbox {
