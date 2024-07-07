@@ -8,6 +8,10 @@
     overflow: hidden;
 }
 
+.titletext {
+    text-align: center;
+}
+
 .dogbox, .catbox {
     display: flex;
 }

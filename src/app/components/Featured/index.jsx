@@ -3,9 +3,15 @@ import style from './style.module.css';
 import { Title } from "./title";
 import { featuredProduct } from "./product";
 import { CustomButton } from "../Button";
+import { useNavigate } from "react-router-dom";
 
 
 export const FeaturedProduct = () => {
+    const navigate = useNavigate();
+
+  const goToProduct = () => {
+    navigate('/product');
+  };
     return (
         <section className={style.container}>
             <Title />
@@ -26,7 +32,7 @@ export const FeaturedProduct = () => {
                                 </div>
                                 <h2 className={style.amount}>{featuredProduct.amount}</h2>
                             </div>
-                            <CustomButton className={style.button} onClick={() => { }} type="secondary">Add to cart</CustomButton>
+                            <CustomButton className={style.button} onClick={goToProduct} type="secondary">Add to cart</CustomButton>
                         </div>
                     </div>
                 ))}

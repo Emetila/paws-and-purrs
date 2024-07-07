@@ -2,8 +2,15 @@ import React from "react";
 import style from './style.module.css';
 import {ReactComponent as Image} from '../../assets/images/hero.svg';
 import { CustomButton } from "../Button";
+import { ProductPage } from "../../pages/Product";
+import { useNavigate } from 'react-router-dom';
 
 export const HeroSection = () => {
+    const navigate = useNavigate();
+
+  const goToProduct = () => {
+    navigate('/product');
+  };
     return (
         <div className={style.hero}>
             <Image className={style.image} />
@@ -13,7 +20,7 @@ export const HeroSection = () => {
                 <p>Discover unique pet products that make a difference. We have Everything your pet needs for 
                     a happy life.</p>
                 </div>
-                <CustomButton onClick={()=>{}}>Shop Paws and Purrs</CustomButton>
+                <CustomButton onClick={goToProduct}>Shop Paws and Purrs</CustomButton>
             </div>
         </div>
     )
