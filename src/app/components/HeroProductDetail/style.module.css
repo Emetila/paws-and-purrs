@@ -1,0 +1,209 @@
+.container {
+    display: flex;
+    padding: 80px 100px;
+    align-items: center;
+    border-bottom: 1px solid #E1E3E2;
+    gap: 80px;
+}
+
+.imagecontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+
+.imagebox {
+    display: flex;
+    align-items: flex-start;
+    gap: 13px;
+}
+
+.smallimage {
+    width: 90px;
+    height: 90px;
+}
+
+.bigimage {
+    width: 350px;
+    height: 250px;
+}
+
+.contentbox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1 0 0;
+}
+
+.contentbox h1 {
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+}
+
+.text, .colorbox p, .quantity p {
+    color: #757777;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: left;
+    margin-top: -15px;
+}
+
+.quantity p {
+    color: #000;
+    font-weight: 450;
+    margin-top: 0;
+}
+
+.ratebox {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.ratebox  {
+    color: #3E4949;
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.5px;
+}
+
+.amount {
+    display: flex;
+    padding: 4px 0px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    background-color: #D9E5E4;
+    color: #000000;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 550;
+    line-height: 32px;
+}
+
+.colorbox, .colorcode {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+
+.colorbox p {
+    color: #000;
+    margin-top: 0;
+}
+
+.colorcode {
+    margin-top: -12px;
+}
+
+.colour2, .colour3, .colour4, .colour5 {
+    width: 24px;
+    height: 24px;
+    fill: #69788F;
+}
+
+.colour3 {
+    fill: #FFB4AA;;
+}
+
+.colour4 {
+    fill: #008080;
+}
+
+.colour5 {
+    fill: #FFDAD5;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25vw;
+}
+
+.counter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.increase {
+    width: 24px;
+    height: 24px;
+}
+
+.count {
+    background-color: #D9E5E4;
+    color: #008080;
+    padding: 0 10px;
+    text-align: center;
+    flex-shrink: 0;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 450;
+    line-height: 32px;
+}
+
+.inputbox{
+    display: flex;
+    padding: 4px 0px 4px;
+    align-items: flex-start;
+    flex: 1 0 0;
+    align-self: stretch;
+    border-radius: 4px 4px 0px 0px;
+    flex-direction: column;
+}
+
+.dropdown {
+    display: flex;
+    width: 450px;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #49454F;
+    flex-direction: row;
+    border-radius: 4px;
+    padding: 0 10px;
+}
+
+.dropdownicon {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+
+.dropdownmenu {
+    display: block;
+    position: absolute;
+    background-color: #f9f9f9;
+    margin-bottom: -17vw;
+    width: 400px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdownitem {
+    padding: 12px 5px;
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+    list-style: none;
+}
+
+.button {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding-top: 20px;
+}
+
+.addbutton {
+    width: 480px;
+}
