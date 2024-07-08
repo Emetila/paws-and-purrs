@@ -5,6 +5,7 @@ import AllPages from './pages/AllPages';
 import { HomePage } from "./pages/Landing";
 import { ProductPage } from "./pages/Product";
 import { ProductDetail } from "./pages/ProductDetail";
+import { CartPage } from "./pages/AllPages/Cart";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Route index element={<HomePage />} />
           <Route path="/product" element={<ProductPage />} />
           <Route path="/productdetail" element={<ProductDetail />} />
+          <Route path="/cart" element={<CartPage />} />
           </Routes>
           </BrowserRouter>
   );

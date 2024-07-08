@@ -32,3 +32,30 @@ line-height: 40px;
     color: #005858;
     text-decoration: none;
 }
+
+@media (max-width:500px) {
+    .container {
+        padding: 20px 10px;
+        background-color: #F6FAF9;
+    }
+    .products {
+        display: flex;
+        padding: 10px;
+        justify-content: space-between;
+        align-items: center;
+        align-self: stretch;
+        gap: 20px;
+    }
+
+    .images {
+        width: 110.837px;
+        height: 80.645px;
+    }
+
+    .heading{
+        font-family: "Roboto", sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 20px;
+}
+}

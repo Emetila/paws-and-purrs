@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { SideSection } from "../SideList";
 import style from './style.module.css';
 import { IoMdArrowDropdown } from "react-icons/io";
@@ -7,20 +7,39 @@ import { CustomButton } from "../Button";
 import { MdKeyboardArrowLeft } from "react-icons/md";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
+import { Cart } from "../Cart/Cart/cart";
+import Sidebar from "../Sidebar";
+import { IoFilter } from "react-icons/io5";
 
 export const ProductSection = () => {
     const navigate = useNavigate();
+    const goToProductDetail = () => {
+        navigate('/productdetail');
+    };
+    //     const [cartItems, setCartItems] = useState([]);
+    //   const [sidebarVisible, setSidebarVisible] = useState(false);
+    //   const [sidebarMessage, setSidebarMessage] = useState('');
 
-  const goToProductDetail = () => {
-    navigate('/productdetail');
-  };
+    //   const handleAddToCart = (product) => {
+    //     const existingProduct = cartItems.find(item => item.id === product.id);
+    //     if (existingProduct) {
+    //       setCartItems(cartItems.map(item =>
+    //         item.id === product.id ? { ...item, quantity: item.quantity + 1 } : item
+    //       ));
+    //     } else {
+    //       setCartItems([...cartItems, { ...product, quantity: 1 }]);
+    //     }
+    //     setSidebarMessage(`${product.name} has been added to the cart!`);
+    //     setSidebarVisible(true);
+    //     setTimeout(() => setSidebarVisible(false), 3000); // Hide sidebar after 3 seconds
+    //   };
     return (
         <main className={style.container}>
-            <aside className={style.container}>
-                <SideSection />
+            <aside className={style.asidecontainer}>
+                <SideSection className={style.side} />
             </aside>
 
-            <article>
+            <article className={style.article}>
                 <div className={style.headcotainer}>
                     <p className={style.containertext}>1 - 15 of 1551 results</p>
                     <div className={style.inputbox}>
@@ -29,6 +48,16 @@ export const ProductSection = () => {
                             <p>Relevance</p>
                             <IoMdArrowDropdown className={style.dropdownicon} />
                         </div>
+                    </div>
+                </div>
+
+                <div className={style.mobileheadcontainer}>
+                    <div className={style.filterbox}>
+                        <div className={style.filter}>
+                            <IoFilter className={style.filtericon} />
+                            <p>Filter & Sort</p>
+                        </div>
+                            <p className={style.containertext}>1 - 15 of 1551 results</p>
                     </div>
                 </div>
 
@@ -56,7 +85,7 @@ export const ProductSection = () => {
                 </div>
 
                 <div className={style.naviation}>
-                    <MdKeyboardArrowLeft className={style.lefticon}/>
+                    <MdKeyboardArrowLeft className={style.lefticon} />
                     <div className={style.number}>
                         <p className={style.active}>1</p>
                         <p>2</p>
