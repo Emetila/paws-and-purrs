@@ -7,7 +7,7 @@ import { Footer } from "../../components/Footer";
 
 export const ProductDetail = () => {
     return (
-        <div>
+        <div >
             <LandingPageNavigation />
             <HeroProductDetail />
             <DescriptionSection />

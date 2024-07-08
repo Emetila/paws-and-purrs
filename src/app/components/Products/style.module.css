@@ -12,7 +12,7 @@
     justify-content: space-between;
     align-items: center;
     align-self: stretch;
-    margin-left: -80px;
+
 }
 
 .containertext {
@@ -52,7 +52,6 @@
     align-items: flex-start;
     align-content: flex-start;
     gap: 25px;
-    margin-left: -90px;
 }
 
 .productbox {

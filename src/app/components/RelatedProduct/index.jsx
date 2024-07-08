@@ -2,6 +2,7 @@ import React from "react";
 import style from './style.module.css';
 import { Related } from "./product";
 import { CustomButton } from "../Button";
+import { IoIosAdd } from "react-icons/io";
 
 export const RelatedProduct = () => {
     return (
@@ -32,6 +33,13 @@ export const RelatedProduct = () => {
                         </div>
                     ))}
                 </div>
+
+                <CustomButton className={style.cartbtn} onClick={() => { }}>
+                    <div className={style.cartbtnbox}>
+                    <IoIosAdd className={style.addicon} />
+                    Add to Cart
+                    </div>
+                 </CustomButton>
         </section>
     )
 }

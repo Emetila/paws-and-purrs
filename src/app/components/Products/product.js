@@ -17,6 +17,7 @@ import favourite from '../../assets/icon/love.svg';
 import star from '../../assets/icon/stars.svg';
 
 export const Products = [{
+    id: "1",
     Image: product1,
     like: favourite,
     title: "Cozy Cuddle Cave",
@@ -26,6 +27,7 @@ export const Products = [{
     amount: "$39.99",
 },
 {
+    id: "2",
     Image: product2,
     like: favourite,
     title: "Recycled Rope Toy",
@@ -35,6 +37,7 @@ export const Products = [{
     amount: "$14.99",
 },
 {
+    id: "3",
     Image: product3,
     like: favourite,
     title: "Feather Teaser Toy",
@@ -44,6 +47,7 @@ export const Products = [{
     amount: "$9.99",
 },
 {
+    id: "4",
     Image: product4,
     like: favourite,
     title: "The Woof IQ Ball",
@@ -53,6 +57,7 @@ export const Products = [{
     amount: "$9.99",
 },
 {
+    id: "5",
     Image: product5,
     like: favourite,
     title: "Cozy Cat Bed",
@@ -62,6 +67,7 @@ export const Products = [{
     amount: "$49.99",
 },
 {
+    id: "6",
     Image: product6,
     like: favourite,
     title: "Customizable Pet Collar",

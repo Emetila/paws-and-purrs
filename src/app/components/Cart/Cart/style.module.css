@@ -1,0 +1,88 @@
+.container {
+    padding: 20px 100px 60px 100px;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.containhead {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+}
+
+.containhead h2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 32px;
+    line-height: 44px;
+    font-weight: 600;
+}
+
+.containhead p {
+    color: #005858;
+    font-size: 14px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.products {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.productbox {
+    display: flex;
+    padding: 20px;
+    align-items: flex-start;
+    gap: 28px;
+    border-bottom: 1px solid #E1E3E2;
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.wrap p {
+    font-size: 12px;
+    font-family: "Roboto", sans-serif;
+}
+
+.heading {
+    font-family: "Roboto", sans-serif;
+    font-family: 14px;
+}
+
+.quantity, .amount {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-top: -15px;
+}
+
+.counter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.count {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    background-color: #E1E3E2;
+    text-align: center;
+}
+
+.amount {
+    font-weight: 600;
+}

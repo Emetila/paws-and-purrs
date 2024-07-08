@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { SideSection } from "../SideList";
 import style from './style.module.css';
 import { IoMdArrowDropdown } from "react-icons/io";
@@ -8,7 +8,7 @@ import { MdKeyboardArrowLeft } from "react-icons/md";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
 import { Cart } from "../Cart/Cart/cart";
-import Sidebar from "../Sidebar";
+import { CartContext } from "../Cart/CartContext";
 import { IoFilter } from "react-icons/io5";
 
 export const ProductSection = () => {
@@ -16,23 +16,9 @@ export const ProductSection = () => {
     const goToProductDetail = () => {
         navigate('/productdetail');
     };
-    //     const [cartItems, setCartItems] = useState([]);
-    //   const [sidebarVisible, setSidebarVisible] = useState(false);
-    //   const [sidebarMessage, setSidebarMessage] = useState('');
-
-    //   const handleAddToCart = (product) => {
-    //     const existingProduct = cartItems.find(item => item.id === product.id);
-    //     if (existingProduct) {
-    //       setCartItems(cartItems.map(item =>
-    //         item.id === product.id ? { ...item, quantity: item.quantity + 1 } : item
-    //       ));
-    //     } else {
-    //       setCartItems([...cartItems, { ...product, quantity: 1 }]);
-    //     }
-    //     setSidebarMessage(`${product.name} has been added to the cart!`);
-    //     setSidebarVisible(true);
-    //     setTimeout(() => setSidebarVisible(false), 3000); // Hide sidebar after 3 seconds
-    //   };
+    const cartContext = useContext(CartContext);
+    const { addProduct } = cartContext;
+    
     return (
         <main className={style.container}>
             <aside className={style.asidecontainer}>
@@ -78,7 +64,7 @@ export const ProductSection = () => {
                                     </div>
                                     <h2 className={style.amount}>{Products.amount}</h2>
                                 </div>
-                                <CustomButton className={style.button} onClick={() => { }} type="secondary">Add to cart</CustomButton>
+                                <CustomButton className={style.button} onClick={() => addProduct(Products.id, Products.title, Products.amount)} type="secondary">Add to cart</CustomButton>
                             </div>
                         </div>
                     ))}

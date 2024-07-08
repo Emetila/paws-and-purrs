@@ -101,3 +101,19 @@
 .button {
     border: 1px solid #FF8376;
 }
+
+.cartbtn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 56px;
+    width: 150px;
+    justify-content: center;
+    border-radius: 16px;
+    background-color: #E5E9E8;
+    color: #005858;
+}
+
+.cartbtnbox {
+    align-items: flex-end;
+}
