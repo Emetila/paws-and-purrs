@@ -34,6 +34,18 @@
     font-weight: 400;
 }
 
+@media (max-width:900px) {
+    .textbox {
+        display: flex;
+        width: 300px;
+        padding: 15px 30px;
+        gap: 3px;
+        position: absolute;
+        right: 40%;
+        top: 60%;
+    }
+}
+
 @media (max-width:500px) {
     .hero {
         overflow: hidden;
@@ -53,8 +65,8 @@
         padding: 15px 30px;
         gap: 3px;
         position: absolute;
-        right: 2px;
-        top: 450px;
+        right: 10%;
+        top: 40%;
     }
 
     .text p {
