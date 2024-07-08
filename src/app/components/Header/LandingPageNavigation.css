@@ -96,7 +96,7 @@ nav ul li a {
     display: none;
 }
 
-@media (min-width:400px) and (max-width:900px) {
+@media (max-width:500px) and (max-width:900px) {
     header {
         padding: 10px;
     }
