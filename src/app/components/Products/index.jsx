@@ -6,8 +6,14 @@ import { Products } from "./product";
 import { CustomButton } from "../Button";
 import { MdKeyboardArrowLeft } from "react-icons/md";
 import { MdKeyboardArrowRight } from "react-icons/md";
+import { useNavigate } from "react-router-dom";
 
 export const ProductSection = () => {
+    const navigate = useNavigate();
+
+  const goToProductDetail = () => {
+    navigate('/productdetail');
+  };
     return (
         <main className={style.container}>
             <aside className={style.container}>
@@ -35,7 +41,7 @@ export const ProductSection = () => {
                             </div>
                             <div className={style.wrap}>
                                 <div className={style.name}>
-                                    <h5 className={style.heading}>{Products.title}</h5>
+                                    <h5 className={style.heading} onClick={goToProductDetail}>{Products.title}</h5>
                                     <p className={style.description}>{Products.description}</p>
                                     <div className={style.ratingbox}>
                                         <img className={style.rating} src={Products.rating} />

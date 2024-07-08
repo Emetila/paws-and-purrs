@@ -76,6 +76,7 @@
     font-weight: 600;
     line-height: 28px;
     margin-top: -3px;
+    cursor: pointer;
 }
 
 .description, .description2 {
