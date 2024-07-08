@@ -20,7 +20,7 @@ export const Newsletter = () => {
                 </div>
             </div>
 
-            <LineIcon />
+            <LineIcon className={style.stroke} />
 
             <div className={style.downloadbox}>
                 <h1>Download our free mobile app to shop for your pets anytime, anywhere</h1>
