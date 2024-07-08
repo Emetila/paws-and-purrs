@@ -86,3 +86,14 @@
 .amount {
     font-weight: 600;
 }
+
+.amountbox {
+    display: flex;
+    width: 300px;
+    padding: 60px 80px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    border-radius: 20px;
+    background: var(--Schemes-Surface, #F6FAF9);
+}
