@@ -8,38 +8,39 @@ import { Outlet, Link } from "react-router-dom";
 import { IoMdArrowDropdown } from "react-icons/io";
 import { IoIosHelpCircleOutline } from "react-icons/io";
 import { MdOutlineShoppingCart } from "react-icons/md";
+import { IoMdMenu } from "react-icons/io";
 
 export const LandingPageNavigation = () => {
+
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleDropdown = () => {
         setIsOpen(!isOpen);
     }
-    // const [query, setQuery] = useState('');
+    const [showMenu, setMenu] = React.useState(false);
 
-    // const handleInputChange = (event) => {
-    //   setQuery(event.target.value);
-    // };
-
-    // const handleSearch = () => {
-    //   onSearch(query);
-    // };
+    const toggleMenu = () => {
+        setMenu(showMenu === false)
+    }
+    
     return (<>
         <header className='header'>
             <div>
                 <Logo />
             </div>
 
+
+            <IoMdMenu className='menu-icon' onClick={toggleMenu} fill='white' />
             <div className='menu'>
-                <HeaderNavigation />
+                <HeaderNavigation className={showMenu ? 'mobile' : ''}/>
             </div>
 
             <div className='menu2'>
-                <nav>
+                <nav className="menu2">
                     <ul>
                         <li>
                             <FaRegUser className="icon" />
-                            <Link to="/accont">Accounts</Link>
+                            <Link className="account" to="/accont">Accounts</Link>
                             <IoMdArrowDropdown onClick={toggleDropdown} className="dropdown-toggle" />
                             {isOpen && (
                                 <ul className="dropdown-menu">
@@ -51,7 +52,7 @@ export const LandingPageNavigation = () => {
                         </li>
                         <li>
                             <IoIosHelpCircleOutline className="icon" />
-                            <Link to="/help">Help</Link>
+                            <Link className="account" to="/help">Help</Link>
                             <IoMdArrowDropdown onClick={toggleDropdown} className="dropdown-toggle" />
                             {isOpen && (
                                 <ul className="dropdown-menu">
@@ -63,9 +64,14 @@ export const LandingPageNavigation = () => {
                         </li>
                         <li>
                             <MdOutlineShoppingCart className="icon" />
-                            <Link to="/cart">Cart</Link>
+                            <Link className="account" to="/cart">Cart</Link>
                         </li>
                     </ul>
+
+                    <div className="icons">
+                    <IoSearch className="searchicon" />
+                        <MdOutlineShoppingCart className="icon" />
+                    </div>
                 </nav>
             </div>
         </header>

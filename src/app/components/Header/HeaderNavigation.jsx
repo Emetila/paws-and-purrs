@@ -3,7 +3,7 @@ import style from './LandingPageNavigation.css';
 import { Outlet, Link } from "react-router-dom";
 import { IoMdArrowDropdown } from "react-icons/io";
 
-export const HeaderNavigation = () => {
+export const HeaderNavigation = (props) => {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleDropdown = () => {
@@ -11,7 +11,7 @@ export const HeaderNavigation = () => {
     }
     return (
         <nav className={style.navbar}>
-            <ul>
+            <ul className={props.className}>
                 <li className="dropdown">
                     <Link to="/about">
                         About
