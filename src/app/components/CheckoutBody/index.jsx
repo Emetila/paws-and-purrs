@@ -9,11 +9,16 @@ import { IoMdArrowDropdown } from "react-icons/io";
 import { IoMdSearch } from "react-icons/io";
 import { IoMdArrowDropleft } from "react-icons/io";
 import { Products } from "./product";
+import { useNavigate } from "react-router-dom";
 
 export const CheckoutSection = () => {
     // const getTotalPrice = () => {
     //     return Products.reduce((total, products) => total + products.amount * products.quantity, 0);
     // };
+    const navigate = useNavigate();
+  const goToPayment = () => {
+    navigate('/payment')
+  };
     return (
         <section>
             <main className={style.container}>
@@ -135,7 +140,7 @@ export const CheckoutSection = () => {
                                 <div><IoMdArrowDropleft className={style.icon} /></div>
                                 Return to Cart
                             </Link>
-                            <CustomButton onClick={() => { }}>Proceed to Payment</CustomButton>
+                            <CustomButton onClick={goToPayment}>Proceed to Payment</CustomButton>
                         </div>
 
                         <div className={style.paybox}>

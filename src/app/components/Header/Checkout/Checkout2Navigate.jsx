@@ -6,10 +6,10 @@ import { MdOutlineShoppingCart } from "react-icons/md";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import { useNavigate } from "react-router-dom";
 
-export const CheckoutHeader = () => {
+export const CheckoutHeaderTwo = () => {
     const navigate = useNavigate();
-  const goToPayment = () => {
-    navigate('/payment')
+  const goToCheckout = () => {
+    navigate('/checkout')
   };
 
     return (<div className={style.body}>
@@ -22,9 +22,9 @@ export const CheckoutHeader = () => {
         </header>
 
         <div className={style.submenu}>
-            <p className={style.shipping}>Shipping</p>
+            <p onClick={goToCheckout} className={style.shipping2}>Shipping</p>
             <IoIosArrowRoundForward className={style.arrow}/>
-            <p className={style.pay} onClick={goToPayment}>Payment</p>
+            <p className={style.pay2}>Payment</p>
         </div>
     </div>
     )

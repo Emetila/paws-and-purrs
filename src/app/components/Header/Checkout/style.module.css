@@ -25,16 +25,46 @@
     font-family: "Roboto", sans-serif;
     font-size: 14px;
     font-weight: 600;
+    cursor: pointer;
+}
+
+.shipping2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    color: #181C1C;
+    opacity: 0.38;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.pay2 {
+    color: #005858;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
 }
 
 .pay {
     color: #181C1C;
     opacity: 0.38;
     font-weight: 500;
+    cursor: pointer;
 }
 
 .arrow {
     color: #181C1C;
     width: 24px;
     height: 24px;
+}
+
+@media (max-width:500px) {
+    .submenu {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 20px 10px;
+        background-color: white;
+        gap: 8px;
+    }
 }

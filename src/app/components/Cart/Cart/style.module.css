@@ -199,3 +199,154 @@
 .apple {
     color: black;
 }
+
+@media (max-width:900px) {
+    .content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .containhead {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+}
+
+@media (max-width:500px) {
+    .container {
+        padding: 20px;
+    }
+    
+    .content {
+        display: flex;
+        flex-direction: column;
+    }
+    .containhead {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    
+    .containhead h2 {
+        font-family: "Roboto", sans-serif;
+        font-size: 28px;
+        line-height: 32px;
+    }
+    
+    .deleteicon {
+        color: #005858;
+    }
+    
+    .content {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .productbox {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        align-items: flex-start;
+        gap: 10px;
+        border-bottom: 1px solid #E1E3E2;
+    }
+    
+    .name {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .wrap p {
+        font-size: 12px;
+        font-family: "Roboto", sans-serif;
+    }
+    
+    .heading {
+        font-family: "Roboto", sans-serif;
+        font-family: 14px;
+    }
+    
+    .quantity, .amount {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        margin-top: -15px;
+    }
+    
+    .count {
+        width: 20px;
+        height: 20px;
+        flex-shrink: 0;
+        background-color: #E1E3E2;
+        text-align: center;
+    }
+    
+    .amount {
+        font-weight: 600;
+    }
+    
+    .amountbox {
+        display: flex;
+        width: 250px;
+        padding: 20px;
+    }
+    
+    .headbox {
+        gap: 20px;
+    }
+    
+    .headbox h2 {
+        font-size: 18px;
+    }
+    
+    .headbox h3 {
+        font-size: 16px;
+    }
+    
+    .button {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        border: 1px solid #FF8376;
+    }
+    
+    .describe {
+        font-size: 12px;
+        text-align: center;
+        color: #454747;
+    }
+    
+    .inputboxbox p {
+        font-size: 12px;
+        color: #454747;
+        font-weight: 400;
+        line-height: 32px;
+    }
+    
+    .inputbox {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+    
+    .infoicon {
+        color: #005858;
+    }
+    
+    .inputbox input {
+        accent-color: #005858;
+        padding: 4px;
+    }
+    
+    .google, .apple {
+        height: 24px;
+    }
+    
+    .apple {
+        color: black;
+    }
+}

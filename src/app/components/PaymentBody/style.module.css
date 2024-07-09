@@ -1,0 +1,243 @@
+.container {
+    display: flex;
+    padding: 80px 100px;
+    align-items: flex-start;
+    gap: 36px;
+    align-self: stretch;
+}
+
+.headbox {
+    display: flex;
+    padding: 40px 0px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.headbox .text {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.shiptext span {
+    color: #757777;
+}
+
+.shiptext {
+    color: black;
+}
+
+.paybox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.paybox input {
+    accent-color: #005858;
+    width: 18px;
+    height: 18px;
+}
+
+.payboxmain {
+    display: flex;
+    justify-content: space-between;
+    gap: 10vw;
+}
+
+.visa {
+    width: 24px;
+    height: 24px;
+}
+
+.cardbox {
+    width: 380px;
+}
+
+.cardbox input, .expirybox input {
+    height: 35px;
+    width: 100%;
+}
+
+.cardicon {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.radioboxbox {
+    display: flex;
+    padding: 20px 0px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+}
+
+.expirybox {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    justify-content: center;
+}
+
+.paymentbox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.products {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.productbox {
+    display: flex;
+    padding: 20px;
+    align-items: flex-start;
+    gap: 28px;
+    border-bottom: 1px solid #E1E3E2;
+}
+
+.pay {
+    margin-top: 5vw;
+    width: 100%;
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.wrap p {
+    font-size: 12px;
+    font-family: "Roboto", sans-serif;
+}
+
+.heading, .amount {
+    font-family: "Roboto", sans-serif;
+    font-family: 12px;
+    text-align: left;
+}
+
+.size {
+    text-align: left;
+    margin-top: -10px;
+}
+
+.itembox {
+    display: flex;
+    padding: 20px 40px;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #F6FAF9;
+}
+
+.itemimage {
+    display: flex;
+    align-items: flex-start;
+}
+
+.number {
+    margin-left: -8px;
+}
+
+.name {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.applybox {
+    display: flex;
+    padding: 40px 20px;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+    justify-content: center;
+    gap: 30px;
+    border-bottom: 1px solid #E1E3E2;
+}
+
+.applybtn {
+   background-color: #F0F4F3;
+   color: #005858;
+   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.30), 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+}
+
+.totalbox {
+    display: flex;
+    padding: 40px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    align-self: stretch;
+    border-bottom: 1px solid #E1E3E2;
+}
+
+.totalbox div {
+    display: flex;
+    justify-content: space-between;
+    align-self: stretch;
+}
+
+.text, .shippingaddress {
+    font-size: 12px;
+}
+
+.money {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.subtotal {
+    display: flex;
+    justify-content: space-between;
+    align-self: stretch;
+    align-items: center;
+}
+
+.subtotal h3  {
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.statebox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.applybox input {
+    height: 38px;
+}
+
+@media (max-width:900px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        align-items: flex-start;
+        gap: 36px;
+        align-self: stretch;
+    }
+}
+
+@media (max-width:500px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        padding: 20px 10px;
+        align-items: flex-start;
+        gap: 36px;
+        align-self: stretch;
+    }
+}
