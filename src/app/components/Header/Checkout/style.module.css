@@ -1,0 +1,40 @@
+.account {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+}
+
+.cart {
+    display: flex;
+    align-items: center;
+}
+
+.submenu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px 100px;
+    background-color: white;
+    gap: 8px;
+}
+
+.shipping, .pay {
+    color: #005858;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.pay {
+    color: #181C1C;
+    opacity: 0.38;
+    font-weight: 500;
+}
+
+.arrow {
+    color: #181C1C;
+    width: 24px;
+    height: 24px;
+}

@@ -26,9 +26,12 @@ export const Cart = () => {
   };
 
   const navigate = useNavigate();
-  const goToProduct = () => {
-    navigate('/product');
+  const goToCheckout = () => {
+    navigate('/checkout')
   };
+  const goToProduct = () => {
+    navigate('/product')
+  }
 
   return (
     <div className={style.container}>
@@ -83,7 +86,7 @@ export const Cart = () => {
               <p>$5.65</p>
             </div>
             <div className={style.buttons}>
-              <CustomButton className={style.btn} onClick={() => { }}>Checkout</CustomButton>
+              <CustomButton className={style.btn} onClick={goToCheckout}>Checkout</CustomButton>
               <CustomButton className={style.social} onClick={() => { }} type="secondary">
                 <div><FcGoogle className={style.google} /></div>
                 Pay
