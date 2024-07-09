@@ -67,15 +67,17 @@ export const CheckoutSection = () => {
                         <div>
                             <label>Address Line 1</label>
                             <div className={style.searchbox}>
+                            <div>
                                 <CustomInput type="text" name="address1" placeholder="Enter your street address" />
-                                <div><IoMdSearch className={style.search} /></div>
+                            </div>
+                            <IoMdSearch className={style.search} />
                             </div>
                         </div>
                         <div>
                             <label>Address Line 2</label>
                             <CustomInput type="address" name="address2" placeholder="Apartment, suite, unit, building, floor, etc." />
                         </div>
-                        <div>
+                        <div className={style.statebox}>
                             <div>
                                 <label>City</label>
                                 <CustomInput type="text" name="city" placeholder="Enter your city" />
