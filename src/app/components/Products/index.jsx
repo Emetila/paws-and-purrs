@@ -51,7 +51,7 @@ export const ProductSection = () => {
                     {Products.map((Products) => (
                         <div className={style.productbox}>
                             <div>
-                                <img className={style.productsimages} src={Products.Image} />
+                                <img className={style.productsimages} src={Products.Image} onClick={goToProductDetail}/>
 
                             </div>
                             <div className={style.wrap}>

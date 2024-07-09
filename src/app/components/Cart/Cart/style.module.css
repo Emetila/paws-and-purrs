@@ -22,6 +22,11 @@
 .containhead p {
     color: #005858;
     font-size: 14px;
+    cursor: pointer;
+}
+
+.deleteicon {
+    color: #005858;
 }
 
 .content {
@@ -89,8 +94,8 @@
 
 .amountbox {
     display: flex;
-    width: 300px;
-    padding: 40px 60px;
+    width: 350px;
+    padding: 40px;
     flex-direction: column;
     align-items: flex-start;
     border-radius: 20px;
@@ -102,9 +107,95 @@
     align-items: center;
     align-self: stretch;
     justify-content: space-between;
+    gap: 40px;
 }
 
 .headbox h2 {
     font-family: "Roboto", sans-serif;
     font-size: 24px;
+    font-weight: 600;
+}
+
+.headbox h3 {
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    border: 1px solid #FF8376;
+}
+
+.describe {
+    font-size: 12px;
+    text-align: center;
+    color: #454747;
+}
+
+.inputboxbox p {
+    font-size: 12px;
+    color: #454747;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.inputboxbox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-self: stretch;
+}
+
+.inputbox {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.infoicon {
+    color: #005858;
+}
+
+.inputbox input {
+    accent-color: #005858;
+    padding: 4px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+    gap: 10px;
+}
+
+.btn {
+    height: 40px;
+    width: 100%;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    border: none;
+    background-color: #FFFFFF;
+    color: #5F6368;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.20);
+}
+
+.google, .apple {
+    height: 24px;
+}
+
+.apple {
+    color: black;
 }

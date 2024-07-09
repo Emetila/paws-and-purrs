@@ -2,13 +2,14 @@ import React, { useState } from 'react';
 import { CartItem } from './cartitem';
 import { Products } from './product';
 import style from './style.module.css';
-import { ReactComponent as Image1 } from '../../../assets/images/dog4.svg';
+import { RiDeleteBin6Line } from "react-icons/ri";
 import { FiMinusCircle } from "react-icons/fi";
 import { IoAddCircleOutline } from "react-icons/io5";
 import { CustomButton } from '../../Button';
 import { IoIosInformationCircleOutline } from "react-icons/io";
 import { FcGoogle } from "react-icons/fc";
 import { FaApple } from "react-icons/fa";
+import { useNavigate } from 'react-router-dom';
 
 export const Cart = () => {
   // Initialize the state with the useState hook
@@ -24,11 +25,16 @@ export const Cart = () => {
     setCount(count - 1);
   };
 
+  const navigate = useNavigate();
+  const goToProduct = () => {
+    navigate('/product');
+  };
+
   return (
     <div className={style.container}>
       <div className={style.containhead}>
         <h2>Your Cart</h2>
-        <p>Continue Shopping</p>
+        <p onClick={goToProduct}>Continue Shopping</p>
       </div>
 
       <div className={style.body}>
@@ -53,7 +59,10 @@ export const Cart = () => {
                     <p className={style.amount}>{Products.amount}</p>
                   </div>
                 </div>
-                <CustomButton className={style.button} onClick={() => { }} type="secondary">Delete</CustomButton>
+                <CustomButton className={style.button} onClick={() => { }} type="secondary">
+                <div><RiDeleteBin6Line className={style.deleteicon} /></div>
+                  Delete
+                  </CustomButton>
               </div>
               
             ))}
@@ -71,15 +80,16 @@ export const Cart = () => {
                 <label>Shipping Protection</label>
                 <IoIosInformationCircleOutline className={style.infoicon} />
               </div>
+              <p>$5.65</p>
             </div>
             <div className={style.buttons}>
               <CustomButton className={style.btn} onClick={() => { }}>Checkout</CustomButton>
               <CustomButton className={style.social} onClick={() => { }} type="secondary">
-                <FcGoogle />
+                <div><FcGoogle className={style.google} /></div>
                 Pay
               </CustomButton>
               <CustomButton className={style.social} onClick={() => { }} type="secondary">
-                <FaApple />
+                <div><FaApple className={style.apple} /></div>
                 Pay
               </CustomButton>
             </div>
