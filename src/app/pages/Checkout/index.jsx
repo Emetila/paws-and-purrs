@@ -7,8 +7,8 @@ export const CheckoutPage = () => {
     return (
         <div>
             <CheckoutHeader />
-            <Footer />
             <CheckoutSection />
+            <Footer />
         </div>
     )
 }

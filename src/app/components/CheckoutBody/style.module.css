@@ -342,21 +342,21 @@ section h2 {
     .options {
         display: flex;
         padding: 10px 0px;
-        gap: 10px;
+        gap: 20px;
     }
     
     .checkbox label,.emailme {
-        width: 250px;
+        width: 300px;
         color: #505352;
         font-weight: 600;
-        font-size: 13px;
+        font-size: 14px;
     }
     
     .checkbox p {
-        font-size: 14px;
+        font-size: 16px;
     }
     .return {
-        width: 340px;
+        width: 480px;
     }
 
     .paybox {

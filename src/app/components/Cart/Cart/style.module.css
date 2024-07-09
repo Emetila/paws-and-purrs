@@ -247,9 +247,9 @@
     
     .productbox {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         padding: 10px;
-        align-items: flex-start;
+        align-items: center;
         gap: 10px;
         border-bottom: 1px solid #E1E3E2;
     }

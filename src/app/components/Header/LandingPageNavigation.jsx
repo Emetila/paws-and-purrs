@@ -4,7 +4,7 @@ import { HeaderNavigation } from "./HeaderNavigation";
 import { IoSearch } from "react-icons/io5";
 import { Logo } from "./Logo";
 import { FaRegUser } from "react-icons/fa6";
-import { Outlet, Link } from "react-router-dom";
+import { Outlet, Link, useNavigate } from "react-router-dom";
 import { IoMdArrowDropdown } from "react-icons/io";
 import { IoIosHelpCircleOutline } from "react-icons/io";
 import { MdOutlineShoppingCart } from "react-icons/md";
@@ -22,17 +22,26 @@ export const LandingPageNavigation = () => {
     const toggleMenu = () => {
         setMenu(showMenu === false)
     }
-    
-    return (<>
+
+    const navigate = useNavigate();
+  const goToCart = () => {
+    navigate('/cart');
+  };
+
+    return (
+    <>
         <header className='header'>
             <div>
                 <Logo />
             </div>
-
-
+            
+            <div className="menucart">
             <IoMdMenu className='menu-icon' onClick={toggleMenu} fill='white' />
+            <MdOutlineShoppingCart onClick={goToCart} className="iconmenu" />
+            </div>
             <div className='menu'>
-                <HeaderNavigation className={showMenu ? 'mobile' : ''}/>
+                
+                <HeaderNavigation className={showMenu ? 'mobile' : ''} />
             </div>
 
             <div className='menu2'>
@@ -69,7 +78,7 @@ export const LandingPageNavigation = () => {
                     </ul>
 
                     <div className="icons">
-                    <IoSearch className="searchicon" />
+                        <IoSearch className="searchicon" />
                         <MdOutlineShoppingCart className="icon" />
                     </div>
                 </nav>
