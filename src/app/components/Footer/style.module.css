@@ -103,6 +103,7 @@
         flex-direction: column;
         padding: 20px 10px;
         gap: 10px;
+        overflow: hidden;
     }
 
     .icon {
@@ -117,7 +118,7 @@
     .flex {
         display: flex;
         flex-direction: column;
-        width: 100px;
+        width: 100%;
         align-items: center;
         justify-content: center;
         gap: 0;
@@ -130,5 +131,10 @@
 
     .copy p {
         font-size: 14px;
+    }
+
+    .nav ul, .legal-urls {
+        display: flex;
+        flex-direction: column;
     }
 }
