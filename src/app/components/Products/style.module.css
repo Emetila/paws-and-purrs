@@ -175,13 +175,14 @@
     width: 40px;
     padding: 8px 0px;
     background-color: #006A6A24;
+    text-align: center;
 }
 
 .mobileheadcontainer {
     display: none;
 }
 
-@media (max-width:900px) {
+@media (min-width:768px) and (max-width: 900px) {
     .headcotainer {
         display: none;
     }
@@ -218,7 +219,7 @@
 
     .productbox {
         height: 430px;
-        width: 300px;
+        width: 250px;
         flex: 25%;
     }
 
@@ -227,7 +228,7 @@
     }
 }
 
-@media (max-width:500px) {
+@media (max-width:400px) {
     .container {
         padding: 10px 20px;
         padding-bottom: 40px;
@@ -300,7 +301,7 @@
     }
 
     .description, .description2, .heading {
-        width: 230px;
+        width: 120px;
     }
     .naviation {
         padding: 5px 0px;

@@ -13,11 +13,11 @@ import { IoFilter } from "react-icons/io5";
 
 export const ProductSection = () => {
     const navigate = useNavigate();
-    const goToProductDetail = () => {
-        navigate('/productdetail');
+    const goToProductCart = () => {
+        navigate('/cart');
     };
-    const cartContext = useContext(CartContext);
-    const { addProduct } = cartContext;
+    // const cartContext = useContext(CartContext);
+    // const { addProduct } = cartContext;
     
     return (
         <main className={style.container}>
@@ -51,12 +51,12 @@ export const ProductSection = () => {
                     {Products.map((Products) => (
                         <div className={style.productbox}>
                             <div>
-                                <img className={style.productsimages} src={Products.Image} onClick={goToProductDetail}/>
+                                <img className={style.productsimages} src={Products.Image} />
 
                             </div>
                             <div className={style.wrap}>
                                 <div className={style.name}>
-                                    <h5 className={style.heading} onClick={goToProductDetail}>{Products.title}</h5>
+                                    <h5 className={style.heading}>{Products.title}</h5>
                                     <p className={style.description}>{Products.description}</p>
                                     <div className={style.ratingbox}>
                                         <img className={style.rating} src={Products.rating} />
@@ -64,7 +64,7 @@ export const ProductSection = () => {
                                     </div>
                                     <h2 className={style.amount}>{Products.amount}</h2>
                                 </div>
-                                <CustomButton className={style.button} onClick={() => addProduct(Products.id, Products.title, Products.amount)} type="secondary">Add to cart</CustomButton>
+                                <CustomButton className={style.button} onClick={goToProductCart} type="secondary">Add to cart</CustomButton>
                             </div>
                         </div>
                     ))}

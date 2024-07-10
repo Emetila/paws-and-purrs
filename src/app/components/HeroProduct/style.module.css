@@ -38,7 +38,7 @@ line-height: 40px;
     text-decoration: none;
 }
 
-@media (max-width:900px) {
+@media (min-width:768px) and (max-width: 900px) {
     .products {
         justify-content: center;
         align-items: center;
@@ -52,8 +52,8 @@ line-height: 40px;
     }
 
     .images {
-        width: 200px;
-        height: 100px;
+        width: 250px;
+        height: 150px;
     }
 
     .heading{
@@ -64,7 +64,7 @@ line-height: 40px;
 }
 }
 
-@media (max-width:500px) {
+@media (max-width:400px) {
     .container {
         padding: 20px 10px;
         background-color: #F6FAF9;
@@ -74,8 +74,8 @@ line-height: 40px;
         padding: 10px;
         justify-content: center;
         align-items: flex-start;
-        gap: 20px;
-        margin-left: -70px;
+        gap: 10px;
+        margin-left: -60px;
     }
 
     .images {
