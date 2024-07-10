@@ -3,7 +3,8 @@
     padding: 80px 100px;
     align-items: center;
     border-bottom: 1px solid #E1E3E2;
-    gap: 80px;
+    gap: 40px;
+    overflow: hidden;
 }
 
 .imagecontainer {
@@ -11,6 +12,7 @@
     flex-direction: column;
     align-items: center;
     gap: 60px;
+    margin-left: -120px;
 }
 
 .imagebox {
@@ -211,4 +213,147 @@
 
 .addbutton {
     width: 480px;
+}
+
+@media (max-width:90px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+    } 
+
+    .contentbox {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        flex: 1;
+    }
+}
+
+@media (max-width:500px) {
+    .container {
+        flex-direction: column;
+        padding: 20px 10px;
+        gap: 20px;
+    }
+
+    .imagecontainer {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .imagebox {
+        gap: 5px;
+    }
+    
+    .smallimage {
+        width: 60px;
+        height: 60px;
+    }
+
+    .bigimage {
+        width: 250px;
+        height: 200px;
+    }
+
+    .contentbox {
+        display: flex;
+        width: 400px;
+        flex-direction: column;
+        align-items: flex-start;
+        flex: 1;
+    }
+    
+    .contentbox h1 {
+        font-family: "Roboto", sans-serif;
+        font-size: 20px;
+    }
+    
+    .text, .colorbox p, .quantity p {
+        margin-top: 10px;
+    }
+    
+    .ratebox  {
+        font-size: 10px;
+        font-weight: 500;
+        line-height: 16px;
+        letter-spacing: 0.5px;
+    }
+    
+    .amount {
+        display: flex;
+        gap: 10px;
+        font-size: 18px;
+        width: 400px;
+        font-weight: 550;
+        line-height: 32px;
+    }
+    
+    .colorbox, .colorcode {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 4px;
+    }
+    
+    .colorbox p {
+        color: #000;
+        margin-top: 0;
+    }
+    
+    .colorcode {
+        margin-top: -12px;
+    }
+    
+    .quantity {
+        gap: 5vw;
+    }
+    
+    .increase {
+        width: 24px;
+        height: 24px;
+    }
+    
+    .count {
+        background-color: #D9E5E4;
+        color: #008080;
+        padding: 0 10px;
+        text-align: center;
+        flex-shrink: 0;
+        font-family: "Roboto", sans-serif;
+        font-size: 16px;
+        font-weight: 450;
+        line-height: 32px;
+    }
+    
+    .dropdown {
+        display: flex;
+        width: 380px;
+        height: 38px;
+    }
+    
+    .dropdownicon {
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+    }
+    
+    .dropdownmenu {
+        margin-top: 25vw;
+        left: 20px;
+        width: 360px;
+    }
+      
+    .dropdownitem {
+        padding: 12px 0;
+        cursor: pointer;
+        font-family: "Roboto", sans-serif;
+        list-style: none;
+    }
+    
+    .addbutton {
+        width: 400px;
+    }
 }
